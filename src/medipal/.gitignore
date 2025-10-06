@@ -1,0 +1,15 @@
+# ignore model binaries and vector DB
+models/
+chroma/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# docker
+*.env.*
+
+# exports
+export/
