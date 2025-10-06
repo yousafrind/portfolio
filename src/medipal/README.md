@@ -132,7 +132,7 @@ Produces `free_med_metrics.csv` with:
 - latency per question
 - token count
 - OCR recall vs gold set
-- vision top-1 accuracy
+- vision 
 
 Example output (CPU, i5-1240P):
 ```
