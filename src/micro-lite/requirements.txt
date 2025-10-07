@@ -1,0 +1,2 @@
+# keep empty or add minimal runtime deps if you use real LLM clients
+requests
