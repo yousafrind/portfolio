@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  erd-rag:
+    build: .
+    container_name: erd-rag
+    volumes:
+      - ./:/app:cached
+      - ./.chroma:/app/.chroma
+    env_file:
+      - .env
+    environment:
+      - EMBEDDER=${EMBEDDER:-local}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TOP_K=${TOP_K:-10}
+    command: ["python","-m","src.cli","build","--erd","src/sample_erd.md"]
+

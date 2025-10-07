@@ -1,0 +1,9 @@
+python-dotenv
+sentence-transformers>=2.2.2
+openai
+chroma-db
+faiss-cpu
+rank-bm25
+networkx
+tqdm
+pytest
